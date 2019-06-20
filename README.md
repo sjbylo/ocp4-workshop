@@ -37,7 +37,7 @@ Guide them to view cluster status, catalog, operator hub, logs, metrics, other g
 
 Is this lab ... you will fetch the source code that you will use for the rest of the labs.  You will make a copy (fork) of a github source code repository and then, using the source code, build and deploy the source code to OpenShift. 
 
-_From the very beginning, one of the main goals of the OpenShift project was to make it really easy for developers to get their code running so they can test it._
+_From the very beginning, one of the main goals of the OpenShift project was to make it really easy for developers to get their code up and running...._
 
 Fork a GitHub source code repository. [this can be all scripted for the participant]. 
 
@@ -47,26 +47,26 @@ cd flask-vote-app
 rm -f  ~/.config/hub
 hub fork
 ```
-(note, hub is a CLI for github API which we can pre-install) 
+(note that 'hub' is a CLI for github API which we can pre-install) 
 (https://hub.github.com/)
 
-This will display the your new repo name (this can be scripted)
+This will display the your new repository name... 
 
 ```
 cd ..
-git clone <your new repo name>
-cd <your new repo>
+git clone <your new repository name>
+cd <your new repository>
 ```
 
-build a container application from source code using S2i
+Build a container application from source code using S2i... 
 
-``oc new-app . python:2.7 --dry-run`` # Remove the Dockerfile from repo?
+``oc new-app . python:2.7 --dry-run`` # Remove the Dockerfile from repository?
 
-Check the output, explain what it does
+Check the output, explain what it does... 
 
 Run for real now...
 
-``oc new-app . python:2.7``  # Remove the Dockerfile from repo?
+``oc new-app . python:2.7``  # Remove the Dockerfile from repository?
 
 Check the build output ...
 
